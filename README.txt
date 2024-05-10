@@ -1,0 +1,3 @@
+My ALU and Branch were slightly changed. Also the REGFILE was changed for this project (where the registers values are initialized to 0 instead of i).
+
+MY ALU didn't completely cover all situations related to STB and STC commands, and so I incorporated that in. My branch had a small error where one of the comparitors was mistyped, so I fixed that. The Program counter had a small issue that only showed up in the FPGA implemntation where CLK_en_pi was also necessary to be on for reset to be on, this was fixed so it is only necessary for incrementing the PC.

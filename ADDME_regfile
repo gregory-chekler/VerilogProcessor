@@ -1,0 +1,15 @@
+
+   // Add this snippet of code to the regfile module for Project 3
+
+always @(posedge clk_pi) begin
+   #1;
+   $display("REG_FILE::\tTime: %3d+\tCARRY Flag: %1b\tBORROW Flag: %1b", $time-1, CARRY_FLAG, BORROW_FLAG);
+
+   for (i=0; i < NUM_REG; i = i+1)
+     $display("REG_FILE[%1d]: %x", i, REG_FILE[i]);
+end
+
+
+
+
+  
